@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_sort_options">
+        <item>@string/pref_sort_label_popdesc</item>
+        <item>@string/pref_sort_label_votedesc</item>
+        <item>@string/pref_sort_label_revdesc</item>
+        <item>@string/pref_sort_label_countdesc</item>
+        <item>@string/pref_sort_label_favorite</item>
+    </string-array>
+    <string-array name="pref_sort_values">
+        <item>@string/pref_sort_popdesc</item>
+        <item>@string/pref_sort_votedesc</item>
+        <item>@string/pref_sort_revdesc</item>
+        <item>@string/pref_sort_countdesc</item>
+        <item>@string/pref_sort_favorite</item>
+    </string-array>
+</resources>
