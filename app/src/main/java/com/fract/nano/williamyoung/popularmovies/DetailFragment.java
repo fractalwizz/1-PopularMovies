@@ -146,9 +146,13 @@ public class DetailFragment extends Fragment {
 
         shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
         shareIntent.setType("text/plain");
-        shareIntent.putExtra(Intent.EXTRA_TEXT, mTrailer.get(0).getUrl());
 
-        return shareIntent;
+        if (mTrailer.size() > 0) {
+            shareIntent.putExtra(Intent.EXTRA_TEXT, mTrailer.get(0).getUrl());
+            return shareIntent;
+        }
+
+        return null;
     }
 
     @Override
